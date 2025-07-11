@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Period Master</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/period.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="header-toolbar">
+  <div class="title">Period Master</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newPeriodBtn">New</button>
+    <button>Delete</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+</div>
+  <div class="listing-container">
+    <div class="Smart-Listingsep"><h6>Listing</h6></div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 5%;">S.NO</th>
+          <th style="width: 10%;">Period Code</th>
+          <th style="width: 10%;">Period Name</th>            
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>00001</td>
+          <td style="text-align: left;">period 1</td>     
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>00002</td>
+          <td style="text-align: left;">period 2</td> 
+        </tr>
+        <tr>
+         <td>3</td>
+          <td>00003</td>
+          <td style="text-align: left;">Break</td>      
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>00004</td>
+          <td style="text-align: left;">period 3</td>     
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>00005</td>
+          <td style="text-align: left;">period 4</td>  
+        </tr>   
+        <tr>
+          <td>6</td>
+          <td>00006</td>
+          <td style="text-align: left;">lunch break</td>  
+        </tr>
+         <tr>
+          <td>7</td>
+          <td>00007</td>
+          <td style="text-align: left;">period 5</td>       
+        </tr>
+         <tr>
+          <td>8</td>
+          <td>00008</td>
+          <td style="text-align: left;">period 6</td>       
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>00009</td>
+          <td style="text-align: left;">Break</td>       
+        </tr>
+         <tr>
+          <td>10</td>
+          <td>00010</td>
+          <td style="text-align: left;">period 7</td>       
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </div>
+  <div class="search-container">
+     <div class="Smart-Mastersep"><h6>Master</h6></div>
+    <div class="form-grid">
+      <div><label>Period Code</label><input type="text" id="PeriodCode"></div>
+      <div><label>Period Name</label><input type="text" id="PeriodName"></div>
+    </div>
+    </div>
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then your custom script -->
+<script src="js/period.js"></script>
+
+  </body>
+</html>

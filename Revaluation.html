@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Revaluation Master</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/⁠Evaluations.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="header-toolbar">
+  <div class="title">Revaluation Entries </div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newEvaluationsBtn">New</button>
+    <button>Delete</button>
+    <button>Add Line</button>
+    <button>QR</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+
+  <!-- Edit Toolbar (Initially hidden) -->
+  <div class="toolbar" id="editToolbar" style="display: none;">
+    <button id="saveBtn">Save</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+</div>
+  <div class="search-container">
+    <div class="form-grid">
+      <div><label>Transaction Number</label><input type="text"></div>
+      <div><label>Academic Year</label><input type="text"></div>
+      <div><label>Exam Name</label><input type="text"></div>    
+      <div><label>Student Code</label><input type="text"></div> 
+      <div><label>Student Name</label><input type="text"></div> 
+    <div>
+  <label for="Grade">Grade</label>
+  <select id="Grade">
+    <option value=""></option>
+    <option value="00000">Pre-Nursery</option>
+    <option value="00001">Pre-K</option>
+    <option value="00002">KG 1</option>
+    <option value="00003">KG 2</option>
+    <option value="00004">GRADE 1</option>
+    <option value="00005">GRADE 2</option>
+    <option value="00006">GRADE 3</option>
+    <option value="00007">GRADE 4</option>
+    <option value="00008">GRADE 5</option>
+    <option value="00009">GRADE 6</option>
+    <option value="00010">GRADE 7</option>
+    <option value="00011">GRADE 8</option>
+    <option value="00012">GRADE 9</option>
+    <option value="00013">GRADE 10</option>
+    <option value="00014">GRADE 11</option>
+    <option value="00015">GRADE 12</option>
+  </select>
+</div>
+    <div>
+      <label for="Subject">Subject</label>
+          <select id="Subject">
+          <option value=""></option>
+          <option value="00000">English</option>
+          <option value="00001">Maths</option>
+          <option value="00002">Physics</option>
+          <option value="00003">Chemistry</option>
+          <option value="00004">Biology</option>
+          <option value="00005">Geography</option>
+          <option value="00006">History</option>   
+          </select>
+    </div>
+    <div>
+      <label for="Teacher">Teacher</label>
+        <select id="Teacher">
+            <option value=""></option>
+            <option value="00000">Diya</option>
+            <option value="00001">Esra</option>
+            <option value="00002">Anil</option>
+            <option value="00003" selected>Alice</option>
+            <option value="00004">Bob</option>
+            <option value="00005">Charlie</option>
+            <option value="00006">David</option>   
+            <option value="00007">Emma</option>
+            <option value="00008">Frank</option>
+            <option value="00009">George</option>
+            <option value="00010">Helen</option>
+            <option value="00011">Ian</option>
+            <option value="00012">John</option>
+            <option value="00013">Kelly</option>   
+            <option value="00014">Leo</option>
+            <option value="00015">Mary</option>
+            <option value="00016">Nathan</option>
+            <option value="00017">Olivia</option>
+            <option value="00018">Paul</option>
+            <option value="00019">Quincy</option>
+            <option value="00020">Rita</option>
+            <option value="00021">Steve</option>
+            <option value="00022">Tina</option>
+            <option value="00023">Uma</option>
+        </select>
+    </div>
+         
+    </div>
+    <br />
+    <button class="searchbtn">Search</button>
+    <button class="resetbtn">Reset</button>
+    <label><input type="checkbox" /> Show All Records</label>
+  </div>
+  <div class="listing-container">
+    <div class="Smart-Listingsep"><h6>Listing</h6></div>
+    <table>
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>Transaction Number</th>
+          <th>Academic Year</th>
+          <th>Student Code</th>
+          <th style="text-align: left;">Student Name(Eng)</th>
+          <th style="text-align: right;">Student Name(Arb)</th> 
+          <th>Grade</th> 
+          <th>Teacher</th>
+          <th>Evaluation Date</th>    
+          <th>Status</th>    
+          <th>Is finalized</th>    
+          <th style="text-align: left;">Remarks</th>       
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>00001</td>
+          <td>2025/2026</td>
+          <td>2025/00001</td>
+          <td style="text-align: left;">ABBAS HUSSAIN ABDULLAH DEHRAB</td>
+          <td style="text-align: right;">عباس حسين عبدالله دهراب</td>
+          <td>GRADE 5</td>
+          <td>Alice</td>
+          <td>10-05-2025</td>
+          <td>Re-evaluation</td>
+          <td>Locked</td>
+          <td style="text-align: left;">Initial assessment flagged inconsistencies. Under review for scoring accuracy.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>00002</td>
+          <td>2025/2026</td>
+          <td>2025/00002</td>
+          <td style="text-align: left;">BADER SABAH BADER ALSABAH</td>
+          <td style="text-align: right;">بدر صباح بدر الصباح</td>
+          <td>GRADE 5</td> 
+          <td>Alice</td>   
+          <td>10-05-2025</td>
+          <td>Pending</td>
+          <td>In Progress</td>
+          <td style="text-align: left;">Awaiting instructor input. Evaluation process ongoing.</td>     
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>00003</td>
+          <td>2025/2026</td>
+          <td>2025/00003</td>
+          <td style="text-align: left;">NADIA ABDULAZIZ TAREQ ALRESHAID</td>
+          <td style="text-align: right;">ناديه عبدالعزيز طارق الرشيد</td>
+          <td>GRADE 5</td>   
+          <td>Alice</td>
+          <td>10-05-2025</td>
+          <td>Evaluated</td>
+          <td>Published</td>
+          <td style="text-align: left;">Successfully completed all evaluation components with satisfactory performance.</td>        
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </div>
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then your custom script -->
+<script src="js/⁠Evaluations.js"></script>
+
+  </body>
+</html>

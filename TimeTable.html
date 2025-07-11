@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timetable Master</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/timetable.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">
+   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header-toolbar">
+  <div class="title">Time Table</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newPeriodBtn">New</button>
+    <button>Delete</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+</div>
+</div>
+  <div class="Smart-Container">
+     <div class="timetable-container">
+      <div class="form-container1">
+  <div class="form-row">
+    <div class="label">Academic Year</div>
+    <div class="Smart-Answerfields">
+      <input class="Smart-Inputfields" type="text" value="2025/2026" />
+    </div>
+  </div>
+
+  <div class="form-row Smart-Space"></div>
+
+  <div class="form-row">
+    <div class="label">Stage</div>
+    <div class="Smart-Answerfields">
+      <select class="Smart-Inputfields">
+        <option value=""></option>
+        <option value="00000">Pre-NURSERY</option>
+        <option value="00001">PRE-KINDERGARTEN</option>
+        <option value="00002">KINDERGARTEN</option>
+        <option value="00003" selected>ELEMENTARY</option>
+        <option value="00004">MIDDLE SCHOOL</option>
+        <option value="00005">HIGH SCHOOL</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row Smart-Space"></div>
+
+  <div class="form-row">
+    <div class="label">Grade</div>
+    <div class="Smart-Answerfields">
+      <select class="Smart-Inputfields">
+        <option>GRADE 1</option>
+        <option selected>GRADE 2</option>
+        <option>GRADE 3</option>
+        <option>GRADE 4</option>
+        <option>GRADE 5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row Smart-Space"></div>
+
+  <div class="form-row">
+    <div class="label">Class</div>
+    <div class="Smart-Answerfields">
+      <select class="Smart-Inputfields">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>
+    </div>
+  </div>
+</div>
+</div>
+
+ <div class="form-container1">
+    <table class="timetable">
+      <thead>
+        <tr>
+          <th>DAYS</th>
+          <th>PERIOD 1<br>09:15AM-10:05AM</th>
+          <th>PERIOD 2<br>10:05AM-10:45AM</th>
+          <th>BREAK<br>10:45AM-11:15AM</th>
+          <th>PERIOD 3<br>11:15AM-12:00PM</th>
+          <th>PERIOD 4<br>12:00PM-1:00PM</th>
+          <th>BREAK<br>1:00PM-2:00PM</th>
+          <th>PERIOD 5<br>2:00PM-2:45PM</th>
+          <th>PERIOD 6<br>2:45PM-3:30PM</th>
+          <th>BREAK<br>3:30PM-3:15PM</th>
+          <th>PERIOD 7<br>3:15PM-4:00PM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SUNDAY</td>
+          <td>English<br>Teacher: SAMUEL</td>
+          <td>Computer Studies<br>Teacher: ALEENA</td>
+          <td rowspan="6" class="break">BREAK</td>
+          <td>Social Studies<br>Teacher: MARIYA</td>
+          <td>Music<br>Teacher: SHAHUL</td>
+          <td rowspan="6" class="lunch">LUNCH</td>
+          <td>Maths<br>Teacher: JISNA</td>
+          <td>Arabic<br>Teacher: NABEEL</td>
+          <td rowspan="6" class="break">BREAK</td>
+          <td>Islamic<br>Teacher: AFSAL</td>
+        </tr>
+        <tr>
+          <td>MONDAY</td>
+          <td>Arabic<br>Teacher: NABEEL</td>
+          <td>Maths<br>Teacher: JISNA</td>
+          <td>Music<br>Teacher: SHAHUL</td>
+          <td>Practical Studies<br>Teacher: ARFAN</td>
+          <td>English<br>Teacher: SAMUEL</td>
+          <td>Social Studies<br>Teacher: MARIYA</td>
+          <td>Science<br>Teacher: LIA</td>
+        </tr>
+        <tr>
+          <td>TUESDAY</td>
+          <td>English<br>Teacher: SAMUEL</td>
+          <td>Islamic<br>Teacher: AFSAL</td>
+          <td>Physical Education<br>Teacher: AJMAL</td>
+          <td>Computer Studies<br>Teacher: ALEENA</td>
+          <td>Arabic<br>Teacher: NABEEL</td>
+          <td>Science<br>Teacher: LIA</td>
+          <td>Social Studies<br>Teacher: MARIYA</td>
+        </tr>
+        <tr>
+          <td>WEDNESDAY</td>
+          <td>Maths<br>Teacher: JISNA</td>
+          <td>Computer Studies<br>Teacher: ALEENA</td>
+          <td>Practical Studies<br>Teacher: ARFAN</td>
+          <td>Music<br>Teacher: SHAHUL</td>
+          <td>Social Studies<br>Teacher: MARIYA</td>
+          <td>Islamic<br>Teacher: AFSAL</td>
+          <td>English<br>Teacher: SAMUEL</td>
+        </tr>
+        <tr>
+          <td>THURSDAY</td>
+          <td>Arabic<br>Teacher: NABEEL</td>
+          <td>Maths<br>Teacher: JISNA</td>
+          <td>Science<br>Teacher: LIA</td>
+          <td>Music<br>Teacher: SHAHUL</td>
+          <td>Computer Studies<br>Teacher: ALEENA</td>
+          <td>English<br>Teacher: SAMUEL</td>
+          <td>Practical Studies<br>Teacher: ARFAN</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+</body>
+</html>
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smartcustom.js"></script>
+    <script src="js/TimeTable.js"></script>
+     <script type="text/javascript" src="lib/_frame/script/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="lib/smartui/lib/bootstrap-datepicker/datepicker.min.js?id=8049f830-fced-450f-a0d6-346579fc835c"></script>
+  </body>
+</html>

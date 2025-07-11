@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grading scheme Master</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/Gradingscheme.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="header-toolbar">
+  <div class="title">Grading scheme Master</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newGradeAssBtn">New</button>
+    <button>Delete</button>
+    <button>Add Line</button>
+    <button>QR</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+
+  <!-- Edit Toolbar (Initially hidden) -->
+  <div class="toolbar" id="editToolbar" style="display: none;">
+    <button id="saveBtn">Save</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+</div>
+  <div class="search-container">
+    <div class="form-grid">
+        <div><label>Academic Year</label><input type="text"></div>       
+        <div><label>Assessment</label><select id="Grade">
+            <option value=""></option>
+            <option value="00001">Midterm Exam</option>
+            <option value="00002">Monthly Test</option>
+        </select></div>
+    </div>
+    <br />
+    <button class="searchbtn">Search</button>
+    <button class="resetbtn">Reset</button>
+    <label><input type="checkbox" /> Show All Records</label>
+  </div>
+  <div class="listing-container">
+    <div class="Smart-Listingsep"><h6>Listing</h6></div>
+    <table>
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>Assessment name </th>
+          <th>Total Mark</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Midterms Exam</td>
+          <td>100</td>   
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </div>
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then your custom script -->
+<script src="js/Gradingscheme.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valuation Assignment Master</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/ValuationAssignment.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="header-toolbar">
+  <div class="title">Valuation Assignment Master</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newEvaluationBtn">New</button>
+    <button>Delete</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+</div>
+  <div class="listing-container">
+    <div class="Smart-Listingsep"><h6>Listing</h6></div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 10%;">Valuation Id</th>
+          <th style="width: 10%;">Exam Name</th> 
+          <th style="width: 10%;">Grade</th> 
+          <th style="width: 10%;">Class</th>      
+          <th style="width: 10%;">Subject</th> 
+          <th style="width: 10%;">Evaluator(Teachers)</th> 
+          <th style="width: 10%;">Evaluation Mode</th> 
+          <th style="width: 10%;">Evaluation Date from</th> 
+          <th style="width: 10%;">Evaluation Date to </th>      
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>10001</td>
+            <td>Term 1</td>
+            <td>GRADE 1</td>
+            <td>A</td>
+            <td>English</td>
+            <td>Alice</td>
+            <td>Manual</td>
+            <td>10-05-2025</td>
+            <td>12-05-2025</td>    
+        </tr>
+         <tr>
+            <td>10002</td>
+            <td>Term 1</td>
+            <td>GRADE 1</td>
+            <td>B</td>
+            <td>Arabic</td>
+            <td>Riya</td>
+            <td>Digital</td>
+            <td>10-05-2025</td>
+            <td>12-05-2025</td>    
+        </tr>
+         <tr>
+            <td>10003</td>
+            <td>Term 1</td>
+            <td>GRADE 1</td>
+            <td>A</td>
+            <td>Maths</td>
+            <td>Alice</td>
+            <td>Onscreen</td>
+            <td>10-05-2025</td>
+            <td>12-05-2025</td>    
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </div>
+  <div class="search-container">
+     <div class="Smart-Mastersep"><h6>Master</h6></div>
+    <div class="form-grid">
+      <div><label>Valuation Id</label><input type="text" id="ValuationId"></div>
+      <div><label>Exam Name</label><input type="text" id="ExamName"></div>
+<div>
+        <label>Grade</label>
+        <select id="Grade">
+            <option value=""></option>
+            <option value="00000">Pre-Nursery</option>
+            <option value="00001">Pre-K</option>
+            <option value="00002">KG 1</option>
+            <option value="00003">KG 2</option>
+            <option value="00004">GRADE 1</option>
+            <option value="00005">GRADE 2</option>
+            <option value="00006">GRADE 3</option>
+            <option value="00007">GRADE 4</option>
+            <option value="00008">GRADE 5</option>
+            <option value="00009">GRADE 6</option>
+            <option value="00010">GRADE 7</option>
+            <option value="00011">GRADE 8</option>
+            <option value="00012">GRADE 9</option>
+            <option value="00013">GRADE 10</option>
+            <option value="00014">GRADE 11</option>
+            <option value="00015">GRADE 12</option>
+        </select>
+        </div>
+
+<div>
+        <label>Class</label>
+        <select id="Class">
+            <option value=""></option>
+            <option value="00001">A</option>
+            <option value="00002">B</option>
+            <option value="00003">C</option>
+            <option value="00004">D</option>
+        </select>
+        </div>
+
+       <div>
+          <label>Subject</label>
+          <select id="Subject">
+            <option value=""></option>
+            <option value="00001">English</option>
+            <option value="00002">Maths</option>
+            <option value="00003">Physics</option>
+            <option value="00004">Chemistry</option>
+            <option value="00005">Biology</option>
+            <option value="00006">Geography</option>
+            <option value="00007">History</option>
+            
+          </select>
+        </div>
+        <div>
+          <label>Evaluator(Teacher)</label>
+          <select id="Teacher">
+            <option value=""></option>
+            <option value="00001">Alice</option>
+            <option value="00002">Bob</option>
+            <option value="00003">Charlie</option>
+            <option value="00004">David</option>
+            <option value="00005">Emma</option>
+            <option value="00006">Frank</option>
+            <option value="00007">George</option>
+            <option value="00008">Helen</option>
+            <option value="00009">Ian</option>
+            <option value="00010">John</option>
+            <option value="00011">Kelly</option>
+            <option value="00012">Leo</option>
+            <option value="00013">Mary</option>
+            <option value="00014">Nathan</option>
+            <option value="00015">Olivia</option>
+            <option value="00016">Paul</option>
+            <option value="00017">Quincy</option>
+            <option value="00018">Rita</option>
+            <option value="00019">Steve</option>
+            <option value="00020">Tina</option>
+            <option value="00021">Uma</option>
+          </select>
+        </div>
+
+<div>
+          <label>Evaluation Mode</label>
+          <select id="EvaluationMode">
+            <option value=""></option>
+            <option value="00001">Manual</option>
+            <option value="00002">Digital</option>
+            <option value="00003">Onscreen</option>
+          </select>
+        </div>
+        <div><label>Evaluation Date from</label><input type="text" id="EvaluationDatefrom"></div>
+        <div><label>Evaluation Date to</label><input type="text" id="EvaluationDateto"></div>
+    </div>
+    </div>
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then your custom script -->
+<script src="js/ValuationAssignment.js"></script>
+
+  </body>
+</html>

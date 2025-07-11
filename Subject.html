@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subject Master</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/subject.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="header-toolbar" style="position: sticky;
+  top: 0;
+  z-index: 999">
+  <div class="title">Subject Master</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newPeriodBtn">New</button>
+    <button>Delete</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+</div>
+
+
+  <div class="listing-container">
+    <div class="Smart-Listingsep"><h6>Listing</h6></div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 5%;">S.NO</th>
+          <th style="width: 10%;">Subject Code</th>
+          <th style="text-align: left;">Subject Name</th>
+          <th style="text-align: left;">Subject Category</th>
+          <th style="text-align: left;">Prerequisites</th>
+          <th style="text-align: left;">Corequisites</th>         
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>00001</td>
+          <td style="text-align: left;">English</td>
+          <td style="text-align: left;">English</td>
+          <td style="text-align: left;">Literature</td>
+          <td style="text-align: left;">Grammar</td>          
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>00002</td>
+          <td style="text-align: left;">Maths</td>
+          <td style="text-align: left;">Maths</td>
+          <td style="text-align: left;">Algebra</td>
+          <td style="text-align: left;">Trigonometri</td>      
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>00003</td>
+          <td style="text-align: left;">Physics</td>
+          <td style="text-align: left;">Science</td>
+          <td style="text-align: left;">Lab</td>
+          <td style="text-align: left;">Lab</td>        
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>00004</td>
+          <td style="text-align: left;">Chemistry</td>
+          <td style="text-align: left;">Science</td>
+          <td style="text-align: left;">Lab</td>
+          <td style="text-align: left;">Lab</td>        
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>00005</td>
+          <td style="text-align: left;">Biology</td>
+          <td style="text-align: left;">Science</td>
+          <td style="text-align: left;">Lab</td>
+          <td style="text-align: left;">Lab</td>        
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>00006</td>
+          <td style="text-align: left;">Geography</td>
+          <td style="text-align: left;">Social Science</td>
+          <td style="text-align: left;"></td>
+          <td style="text-align: left;"></td>        
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>00007</td>
+          <td style="text-align: left;">History</td>
+          <td style="text-align: left;">Social Science</td>
+          <td style="text-align: left;"></td>
+          <td style="text-align: left;"></td>        
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </div>
+  <div class="search-container">
+     <div class="Smart-Mastersep"><h6>Master</h6></div>
+    <div class="form-grid">
+      <div><label>Subject Code</label><input type="text" id="subjectCode"></div>
+      <div><label>Subject Name</label><input type="text" id="subjectName"></div>
+      <div><label>Subject Category</label><input type="text" id="subjectCategory"></div>
+      <div><label>Prerequisites</label><input type="text" id="prerequisites"></div>
+      <div><label>Corequisites</label><input type="text" id="corequisites"></div>
+    </div>
+  </div>
+ <div class="Smart-Assignedfield">
+    <fieldset>
+        <legend>Assigned Teachers</legend>
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Teacher Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="teachersTable">
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" name="teacherName[]"></td>
+                    <td><button class="btnbtn" type="button" onclick="removeRow(this)">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btnbtn" type="button" onclick="addTeacherRow()">Add Teacher</button>
+    </fieldset>
+</div>
+
+<!-- Assigned Grades -->
+<div class="Smart-Assignedfield">
+    <fieldset>
+        <legend>Assigned Grades</legend>
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="gradesTable">
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" name="grade[]"></td>
+                    <td><button class="btnbtn" type="button" onclick="removeRow(this)">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btnbtn" type="button" onclick="addGradeRow()">Add Grade</button>
+    </fieldset>
+</div>
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then your custom script -->
+<script src="js/subject.js"></script>
+
+  </body>
+</html>

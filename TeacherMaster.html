@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teacher Master</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/teacher.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="header-toolbar">
+  <div class="title">Teacher Master</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newTeacherBtn">New</button>
+    <button>Delete</button>
+    <button>Add Line</button>
+    <button>QR</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+
+  <!-- Edit Toolbar (Initially hidden) -->
+  <div class="toolbar" id="editToolbar" style="display: none;">
+    <button id="saveBtn">Save</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+</div>
+  <div class="search-container">
+    <div class="form-grid">
+      <div><label>Teacher Code</label><input type="text"></div>
+      <div><label>Teacher Name(Eng)</label><input type="text"></div>
+      <div><label>Teacher Name(Arb)</label><input type="text"></div>
+      <div><label>Mobile No. 1</label><input type="text"></div>
+
+      <div><label>Mobile No. 2</label><input type="text"></div>
+      <div><label>Email</label><input type="email"></div>
+      <div><label>Email 2</label><input type="email"></div>
+      <div><label>Nationality</label><select>
+                            <option value=""></option>
+                            <option value="00026"> Algerian</option>
+                            <option value="00006"> American</option>
+                            <option value="00016"> Australian</option>
+                            <option value="00018"> Bahraini</option>
+                            <option value="00020"> Bedoun</option>
+                            <option value="00040"> Belarusian</option>
+                            <option value="00028"> Belizean</option>
+                            <option value="00055"> Brazilian</option>
+                            <option value="00007"> British</option>
+                            <option value="00032"> BULGARIAN</option>
+                            <option value="00013"> Canadian</option>
+                            <option value="00056"> Cote d'lvoire</option>
+                            <option value="00048"> Croatian</option>
+                            <option value="00053"> Cyprus</option>
+                            <option value="00014"> Danish</option>
+                            <option value="00009"> Egyptian</option>
+                            <option value="00010"> Emirati</option>
+                            <option value="00022"> Finnish</option>
+                            <option value="00021"> French</option>
+                            <option value="00049"> Georgian</option>
+                            <option value="00042"> German</option>
+                            <option value="00033"> HUNGARIAN</option>
+                            <option value="00019"> Indian</option>
+                            <option value="00011"> Iranian</option>
+                            <option value="00012"> Iraqi</option>
+                            <option value="00029"> Irish</option>
+                            <option value="00044"> Jamaican</option>
+                            <option value="00023"> Japanese</option>
+                            <option value="00005"> Jordanian</option>
+                            <option value="00046"> Kenyan</option>
+                            <option value="00001">Kuwaiti</option>
+                            <option value="00004"> Lebanese</option>
+                            <option value="00031"> Libyan</option>
+                            <option value="00052"> Moroccan</option>
+                            <option value="00017"> Nigerian</option>
+                            <option value="00030"> Omani</option>
+                            <option value="00039"> Pakistani</option>
+                            <option value="00008"> Palestinian</option>
+                            <option value="00043"> Panamanian</option>
+                            <option value="00034"> Philippino</option>
+                            <option value="00059"> Polish</option>
+                            <option value="00038"> Qatari</option>
+                            <option value="00047"> Romanian</option>
+                            <option value="00035"> RUSSIAN</option>
+                            <option value="00054"> Saint Kitts and Nevis</option>
+                            <option value="00003"> Saudi</option>
+                            <option value="00058"> Serbia</option>
+                            <option value="00045"> South African</option></select></div>
+
+      <div><label>Joining Date</label><input type="date"></div>
+
+      <div><label>Teacher Status</label><select> 
+                            <option value=""></option>
+                            <option value="1"> New</option>
+                            <option value="2"> Active</option>
+                            <option value="3"> Inactive</option>
+                            <option value="4"> Resigned</option></select></div>
+      <div><label>Employment Type</label><select><option value=""></option>
+                            <option value="1"> Full Time</option>
+                            <option value="2"> Part Time</option></select></div>
+      <div><label>Qualifications</label><input type="text"></div>
+      <div><label>Experience</label><input type="text"></div>
+
+      <div><label>Salary</label><input type="text"></div>
+      <div><label>Performance History</label><input type="text"></div>
+    </div>
+    <br />
+    <button class="searchbtn">Search</button>
+    <button class="resetbtn">Reset</button>
+    <label><input type="checkbox" /> Show All Records</label>
+  </div>
+  <div class="listing-container">
+    <div class="Smart-Listingsep"><h6>Listing</h6></div>
+    <table>
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>Teacher Code</th>
+          <th>Teacher Name(Eng)</th>
+          <th>Teacher Name(Arb)</th>
+          <th>Mobile No</th>
+          <th>Mobile No. 2</th>
+          <th>Email</th>
+          <th>Email 2</th>
+          <th>Nationality</th>
+          <th>Joining Date</th>
+          <th>Teacher Status</th>
+          <th>Employment Type</th>
+          <th>Assigned Grades</th>
+          <th>Qualification</th>
+          <th>Experience</th>
+          <th>Salary</th>
+          <th>Performance History</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>00001</td>
+          <td>Diya</td>
+          <td>ضياء</td>
+          <td>7898456154</td>
+          <td>7898456154</td>
+          <td>testdiya@gmail.com</td>
+          <td>testdiya@gmail.com</td>
+          <td>Kuwaiti</td>
+          <td>01-06-2019</td>
+          <td>Active</td>         
+          <td>Full Time</td>
+          <td>KG1,GRADE 1</td>
+          <td>MA Eng</td>
+          <td>10</td>
+          <td>1000000.00</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>00002</td>
+          <td>Esra</td>
+          <td>إسراء</td>
+          <td>99111377</td>
+          <td>99776166</td>
+          <td>testlesra@gmail.com</td>
+          <td>testlesra@gmail.com</td>
+          <td>Kuwaiti</td>
+          <td>17-06-2020</td>
+          <td>Active</td>      
+          <td>Full Time</td>
+          <td>KG2,GRADE 5</td>
+          <td>MA Maths</td>
+          <td>10</td>
+          <td>1000000.00</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>00003</td>
+          <td>Anil</td>
+          <td>أنيل</td>
+          <td>99111785</td>
+          <td>99789666</td>
+          <td>testlanil@gmail.com</td>
+          <td>testlanil@gmail.com</td>
+          <td>Kuwaiti</td>
+          <td>19-06-2020</td>
+          <td>Active</td>        
+          <td>Full Time</td>
+          <td>GRADE 1,GRADE 8</td>
+          <td>MA Arabic</td>
+          <td>10</td>
+          <td>1000000.00</td>
+          <td>Good</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </div>
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then your custom script -->
+<script src="js/teacher.js"></script>
+
+  </body>
+</html>

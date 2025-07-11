@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartSuite</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>
+    <div class="topbar" style="position: sticky;
+  top: 0;
+  z-index: 999">
+      <div>SmartSuite<sup>ERP</sup></div>
+      <div>
+        <button title="Fullscreen">⛶</button>
+        <button title="Notifications">🔔</button>
+        <button title="Settings">⚙</button>
+        <button title="User">👤</button>
+        
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="menu-section">
+        <ul style="margin-left:10px;">
+          <li class="curriculum-toggle" style="cursor:pointer;">
+            Curriculum Module
+            <ul class="curriculum-menu" style="display:none; margin-left:10px;">
+              <li class="transaction-toggle" style="cursor:pointer;">
+                Transaction
+                <ul class="transaction-menu" style="display:none; margin-left:10px;">   
+                  <li onclick="loadPage('Attendance.html')"class="master-menusec" style="cursor:pointer;">Attendance</li>            
+                  <li onclick="loadPage('timetable.html')"class="master-menusec" style="cursor:pointer;">Time Table Master</li>
+                  <li onclick="loadPage('ExamTimetable.html')"class=" master-menusec" style="cursor:pointer;">Exam Time Table</li>
+                  <li onclick="loadPage('ExamAttendance.html')"class=" master-menusec" style="cursor:pointer;">Exam Attendance Transaction </li>
+                  <li onclick="loadPage('Evaluations.html')"class="master-menusec" style="cursor:pointer;">Evaluation Process</li>
+                  <li onclick="loadPage('ResultPublishing.html')"class="master-menusec" style="cursor:pointer;">Result Publishing</li>
+                  <li onclick="loadPage('SupplementaryExm.html')"class="master-menusec" style="cursor:pointer;">Supplementary Exam Handling</li>
+                </ul>
+              </li>
+              <li class="master-toggle" style="cursor:pointer;">
+                Master
+                <ul class="master-menu" style="display:none; margin-left:10px;">
+                  <li onclick="loadPage('subject.html')"class="master-menusec" style="cursor:pointer;">Subject Master</li>
+                  <li onclick="loadPage('teachermaster.html')"class="master-menusec" style="cursor:pointer;">Teacher Master</li>
+                  <li onclick="loadPage('period.html')"class="master-menusec" style="cursor:pointer;">Period Master</li>
+                  <li onclick="loadPage('workingdays.html')"class="master-menusec" style="cursor:pointer;">Working Days Master</li>
+                  <li onclick="loadPage('Gradeandsubject.html')"class="gradesub-link master-menusec" style="cursor:pointer;">Grade and Subject Configuration</li>
+                  <li onclick="loadPage('PeriodSubTeacherConfig.html')"class="psubteach-link master-menusec" style="cursor:pointer;">Grade and Period Configuration</li>
+                  <li class="assessment-toggle master-menusec" style="cursor:pointer;">
+                    Assessment Setup & Configuration
+                    <ul class="assessment-menu" style="display:none; margin-left:10px;">
+                      <li onclick="loadPage('AssessmentType.html')"class="master-menusec" style="cursor:pointer;">Assessment Type Master</li>
+                      <li onclick="loadPage('Assessment.html')"class="master-menusec" style="cursor:pointer;">Assessment Master</li>
+                      <li onclick="loadPage('GradeAssConfig.html')"class="GradeAssConfig-link master-menusec" style="cursor:pointer;">Grade -Assessment Configuration</li>
+                      <li onclick="loadPage('Gradingscheme.html')"class="Gradingscheme-link master-menusec" style="cursor:pointer;">Grading scheme Master</li>                  
+                    </ul>
+                  </li>
+                  <li class="examination-toggle master-menusec" style="cursor:pointer;">
+                    Examination 
+                    <ul class="examination-menu" style="display:none; margin-left:10px;">
+                      <li onclick="loadPage('Examschedule.html')"class="master-menusec" style="cursor:pointer;">Exam Schedule</li>
+                      <li onclick="loadPage('SeatingArrangement.html')"class="master-menusec" style="cursor:pointer;">Seating  Arrangement Master</li>                 
+                    </ul>
+                  </li>
+                  <li class="evaluation-toggle master-menusec" style="cursor:pointer;">
+                    Evaluation 
+                    <ul class="evaluation-menu" style="display:none; margin-left:10px;">
+                      <li onclick="loadPage('ValuationAssignment.html')"class="master-menusec" style="cursor:pointer;">Valuation Assignment Master</li>                
+                    </ul>
+                  </li>
+                  <li class="AssignmentHwEvaluation-toggle master-menusec" style="cursor:pointer;">
+                    Assignment / Homework Evaluation
+                    <ul class="AssignmentHwEvaluation-menu" style="display:none; margin-left:10px;">
+                      <li onclick="loadPage('AssignmentHomework.html')"class="master-menusec" style="cursor:pointer;">Assignment / Homework Master</li>                
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+               <li class="report-toggle" style="cursor:pointer;">
+                Report
+                <ul class="report-menu" style="display:none; margin-left:10px;">              
+                  <li onclick="loadPage('Hallticket.html')"class="master-menusec" style="cursor:pointer;">Hall Ticket Management Report</li>
+                  <li onclick="loadPage('ProgressCard.html')"class="master-menusec" style="cursor:pointer;">Progress Card / Report Card Generator Report</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="main-content"class="contentmain">
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/smartcustom.js"></script>
+  </body>
+</html>

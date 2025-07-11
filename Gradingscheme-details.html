@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grade-Assessment Configuration Detail</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/GradeAssConfig-details.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/Gradingscheme-details.css"/>
+</head>
+
+<body>
+
+
+<div class="header-toolbar">
+  <div class="title">Grade-Assessment Configuration Detail</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button>New</button>
+    <button>Delete</button>
+    <button>Add Line</button>
+    <button>QR</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+
+  <!-- Edit Toolbar (Initially hidden) -->
+  <div class="toolbar" id="editToolbar" style="display: none;">
+    <button id="saveBtn">Save</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+</div>
+
+  <div class="contentsec">
+    <div class="form-grid">
+      <div>
+        <label>Academic Year</label>
+        <input class="smartinput" type="text" value="2025/2026" readonly>
+      </div>
+      <div>
+        <label>Assessment Name</label>
+        <select id="Assessment">
+            <option value=""></option>
+            <option value="00000">Monthly Test</option>
+            <option value="00001" selected>Midterm Exam</option>           
+        </select>
+        </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr class="detailtab">
+          <th>S.NO</th>
+          <th style="text-align: center;">Min Marks Range (%) </th>
+          <th style="text-align: center;">Max Marks Range (%)</th>
+          <th style="text-align: center;">Grade</th>
+          <th style="text-align: center;">Grade Point (GPA)</th>
+          <th class="actions">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">1</td>
+          <td style="text-align: center;">90</td>
+          <td style="text-align: center;">100</td>
+          <td style="text-align: center;">A+</td>
+          <td style="text-align: center;">4</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2</td>
+          <td style="text-align: center;">80</td>
+          <td style="text-align: center;">89</td>
+          <td style="text-align: center;">A</td>
+          <td style="text-align: center;">3.7</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">3</td>
+          <td style="text-align: center;">70</td>
+          <td style="text-align: center;">79</td>
+          <td style="text-align: center;">B</td>
+          <td style="text-align: center;">3</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+         <tr>
+          <td style="text-align: center;">4</td>
+          <td style="text-align: center;">60</td>
+          <td style="text-align: center;">69</td>
+          <td style="text-align: center;">C</td>
+          <td style="text-align: center;">2</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+         <tr>
+          <td style="text-align: center;">5</td>
+          <td style="text-align: center;">50</td>
+          <td style="text-align: center;">59</td>
+          <td style="text-align: center;">D</td>
+          <td style="text-align: center;">1</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">6</td>
+          <td style="text-align: center;">0</td>
+          <td style="text-align: center;">49</td>
+          <td style="text-align: center;">F</td>
+          <td style="text-align: center;">0</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/Gradingscheme-details.js"></script>   
+
+  </body>
+</html>

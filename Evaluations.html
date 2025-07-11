@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evaluations Detail</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/⁠Evaluations.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/Evaluations.css"/>
+</head>
+
+<body>
+
+
+<div class="header-toolbar">
+  <div class="title">Evaluations Detail</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button>New</button>
+    <button>Delete</button>
+    <button>Add Line</button>
+    <button>QR</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+
+  <!-- Edit Toolbar (Initially hidden) -->
+  <div class="toolbar" id="editToolbar" style="display: none;">
+    <button id="saveBtn">Save</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+</div>
+
+  <div class="">
+    <div class="form-grid">
+      <div>
+        <label>Transaction Number</label>
+        <input class="smartinput" type="text" value="202500001" readonly>
+      </div>
+      <div>
+        <label>Transaction Date</label>
+        <input class="smartinput" type="text" value="01/01/2025" readonly>
+      </div>
+      <div>
+        <label>Academic Year</label>
+        <input class="smartinput" type="text" value="2025/2026" readonly>
+      </div>
+      <div><label>Grade</label><input class="smartinput" type="text" value="GRADE 1"></div>    
+      <div><label>Teacher</label><input class="smartinput" type="text" value="Alice"></div>    
+     <div><label>Exam Name</label><select id="Subject">
+          <option value=""></option>
+          <option value="00000" selected>TERM 1</option>
+          <option value="00001">TERM 2</option>
+          <option value="00002">Physics</option>
+          <option value="00003">Chemistry</option>
+          <option value="00004">Biology</option>
+          <option value="00005">Geography</option>
+          <option value="00006">History</option>   
+          </select></div>    
+     <div>
+      <label for="Subject">Subject</label>
+          <select id="Subject">
+          <option value=""></option>
+          <option value="00000" selected>English</option>
+          <option value="00001">Maths</option>
+          <option value="00002">Physics</option>
+          <option value="00003">Chemistry</option>
+          <option value="00004">Biology</option>
+          <option value="00005">Geography</option>
+          <option value="00006">History</option>   
+          </select>
+    </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr class="detailtab">
+          <th>S.NO</th>
+          <th>Student Code</th>
+          <th>Student Name</th>
+          <th style="text-align: center;">Weightage (%)</th>
+          <th style="text-align: center;">Mark</th>
+          <th style="text-align: center;">Total Mark</th>
+          <th style="text-align: center;">Passing Mark</th>
+          <th style="text-align: center;">Result</th>
+          <th style="text-align: center;">GPA</th>
+          <th style="text-align: center;">Score Grade</th>
+          <th style="text-align: center;">Evaluation Date</th>
+          <th style="text-align: center;">Status</th>
+          <th style="text-align: center;">Is finalized</th>
+          <th style="text-align: left;">Remarks</th>
+          <th class="actions">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2025/00001</td>
+          <td>ABBAS HUSSAIN ABDULLAH DEHRAB</td>
+          <td style="text-align: center;">30%</td>
+          <td style="text-align: center;">20</td>
+          <td style="text-align: center;">100</td>
+          <td style="text-align: center;">30</td>
+          <td style="text-align: center;">F</td>
+          <td style="text-align: center;">1.7</td>
+          <td style="text-align: center;">D</td>
+          <td style="text-align: center;">10/05/2025</td>
+          <td style="text-align: left;">Re-evaluation</td>
+          <td style="text-align: left;">Locked</td>
+          <td style="text-align: left;">Initial assessment flagged inconsistencies. Under review for scoring accuracy.</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+         <tr>
+          <td>2</td>
+          <td>2025/00002</td>
+          <td>BADER SABAH BADER ALSABAH</td>
+          <td style="text-align: center;">30%</td>
+          <td style="text-align: center;">-</td>
+          <td style="text-align: center;">100</td>
+          <td style="text-align: center;">30</td>
+          <td style="text-align: center;">-</td>
+          <td style="text-align: center;">-</td>
+          <td style="text-align: center;">-</td>
+          <td style="text-align: center;">10/05/2025</td>
+          <td style="text-align: left;">Pending</td>
+          <td style="text-align: left;">In Progress</td>
+          <td style="text-align: left;">Awaiting instructor input. Evaluation process ongoing.</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>2025/00003</td>
+          <td>CADY ADEL SHAMLAN ALHASAWI</td>
+          <td style="text-align: center;">30%</td>
+          <td style="text-align: center;">88</td>
+          <td style="text-align: center;">100</td>
+          <td style="text-align: center;">30</td>
+          <td style="text-align: center;">P</td>
+          <td style="text-align: center;">3.7</td>
+          <td style="text-align: center;">A</td>
+          <td style="text-align: center;">10/05/2025</td>
+          <td style="text-align: left;">Evaluated</td>
+          <td style="text-align: left;">Published</td>
+          <td style="text-align: left;">Successfully completed all evaluation components with satisfactory performance.</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>2025/00004</td>
+          <td>NADIA ABDULAZIZ TAREQ ALRESHAID</td>
+          <td style="text-align: center;">30%</td>
+          <td style="text-align: center;">75</td>
+          <td style="text-align: center;">100</td>
+          <td style="text-align: center;">30</td>
+          <td style="text-align: center;">P</td>
+          <td style="text-align: center;">3</td>
+          <td style="text-align: center;">B</td>
+          <td style="text-align: center;">10/05/2025</td>
+          <td style="text-align: left;">Evaluated</td>
+          <td style="text-align: left;">Published</td>
+          <td style="text-align: left;">Successfully completed all evaluation components.</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>2025/00005</td>
+          <td>RYAN BORHAN ISFENDIAR KAMALI</td>
+          <td style="text-align: center;">30%</td>
+          <td style="text-align: center;">66</td>
+          <td style="text-align: center;">100</td>
+          <td style="text-align: center;">30</td>
+          <td style="text-align: center;">P</td>
+          <td style="text-align: center;">2.8</td>
+          <td style="text-align: center;">C</td>
+          <td style="text-align: center;">10/05/2025</td>
+          <td style="text-align: left;">Evaluated</td>
+          <td style="text-align: left;">Published</td>
+          <td style="text-align: left;">Successfully completed all evaluation components</td>
+          <td class="actions"><span class="delete-btn">✖</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/⁠Evaluations.js"></script>   
+
+  </body>
+</html>

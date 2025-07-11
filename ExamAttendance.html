@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exam Attendance Master</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/attandance.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grade 9 Timetable</title>
+  <link rel="stylesheet" href="style.css" />
+ </head>
+<body>
+ <div class="header-toolbar">
+  <div class="title">EXAM ATTENDANCE</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newPeriodBtn">New</button>
+    <button>Delete</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+</div>
+</div>
+  <div class="Smart-Container">
+   <div style="display: flex; width: 100%;">
+  <!-- Left side: Form Table -->  
+  <div style="width: 50%;padding: 8px;">
+    <div class="form-container">
+      <div class="form-row">
+        <div class="label">Academic Year</div>
+        <div class="Smart-Answerfields">
+            <input type="text" class="Smart-Inputfields" value="2025/2026" />
+        </div>
+      </div>
+      <div class="form-row spacebck"></div>
+      <div class="form-row">
+        <div class="label">Exam</div>
+        <div class="Smart-Answerfields">
+            <input type="text" class="Smart-Inputfields" value="TERM 1" />
+        </div>
+      </div>
+      <div class="form-row spacebck"></div>
+       <div class="form-row">
+        <div class="label">Grade</div>
+        <div class="Smart-Answerfields">
+          <select class="Smart-Inputfields">
+            <option>GRADE 9</option>
+            <option>GRADE 8</option>
+            <option>GRADE 7</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row spacebck"></div>
+      <div class="form-row">
+         <div class="label">Subject</div>
+         <div class="Smart-Answerfields">
+          <select id="Subject"class="Smart-Inputfields">
+            <option value=""></option>
+            <option value="00001">English</option>
+            <option value="00002">Maths</option>
+            <option value="00003" selected>Physics</option>
+            <option value="00004">Chemistry</option>
+            <option value="00005">Biology</option>
+            <option value="00006">Geography</option>
+            <option value="00007">History</option>
+            
+          </select>
+          </div>
+        </div>
+        <div class="form-row spacebck"></div>
+      <div class="form-row">
+         <div class="label">Teacher</div>
+         <div class="Smart-Answerfields">
+          <select id="Teacher"class="Smart-Inputfields">
+             <option value=""></option>
+            <option value="00001">Alice</option>
+            <option value="00002">Bob</option>
+            <option value="00003" selected>Charlie</option>
+            <option value="00004">David</option>
+            <option value="00005">Emma</option>
+            <option value="00006">Frank</option>
+            <option value="00007">George</option>
+            <option value="00008">Helen</option>
+            <option value="00009">Ian</option>
+            <option value="00010">John</option>
+            <option value="00011">Kelly</option>
+            <option value="00012">Leo</option>
+            <option value="00013">Mary</option>
+            <option value="00014">Nathan</option>
+            <option value="00015">Olivia</option>
+            <option value="00016">Paul</option>
+            <option value="00017">Quincy</option>
+            <option value="00018">Rita</option>
+            <option value="00019">Steve</option>
+            <option value="00020">Tina</option>
+            <option value="00021">Uma</option>
+            
+          </select>
+          </div>
+        </div>
+      <div class="form-row spacebck"></div>
+      <div class="form-row">
+        <div class="label">Room No</div>
+        <div class="Smart-Answerfields">
+          <input type="text" class="Smart-Inputfields" value="A10" />
+        </div>
+      </div>
+      <div class="form-row spacebck"></div>
+      <div class="form-row">
+        <div class="label">Date</div>
+        <div class="Smart-Answerfields">
+          <input type="date" class="Smart-Inputfields" value="2025-06-04" />
+        </div>
+      </div>
+      <div class="form-row spacebck"></div>
+      <div class="form-row">
+        <div class="label">Time</div>
+        <div class="Smart-Answerfields">
+          <input type="text" class="Smart-Inputfields" value="1.30 PM to 4.00 PM" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Attendance Summary -->
+   <div class="form-container1" >
+  <div class="Smart-Containersum">
+  <div>
+    <div class="right-summary">
+      <div class="form-row">
+        <div class="label1 summary-text total">Total Students</div>
+        <div class="Smart-Answerfields">
+          <input type="text" class="Smart-Inputfields" value="10" />
+        </div>
+      </div>
+
+      <div class="form-row spacebck"></div>
+
+      <div class="form-row">
+        <div class="label1 summary-text presenttxt">Present</div>
+        <div class="Smart-Answerfields">
+          <input type="text" class="Smart-Inputfields" value="8" />
+        </div>
+      </div>
+
+      <div class="form-row spacebck"></div>
+
+      <div class="form-row">
+        <div class="label1 summary-text absenttxt">Absent</div>
+        <div class="Smart-Answerfields">
+          <input type="text" class="Smart-Inputfields" value="2" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+   </div>
+
+  <div class="Smart-Containertab">
+    <table class="attandancetab">
+    <thead>
+      <tr>
+        <th><b>S.No</b></th>
+        <th><b>Student Code</b></th>
+        <th onclick="sortTableByName()" id="nameHeader">
+          <b>Student Name </b><i id="sortArrow" class="fas fa-sort-up"></i>
+        </th>
+        <th onclick="sortTableByAttendance()" id="attendanceHeader"style="width: 10%;">
+          <b>Attendance </b><i id="attendanceSortArrow" class="fas fa-sort-up"></i>
+        </th>
+        <th><b>Remarks</b></th>     
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-id="1">
+        <td class="srnum">1</td>
+        <td class="studentcode">2025/00001</td>
+        <td class="txtalign">ABBAS HUSSAIN ABDULLAH DEHRAB</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '1')">P</button></td>      
+       <td class="editable"></td>
+      </tr>
+      <tr data-id="2">
+        <td class="srnum">2</td>
+        <td class="studentcode">2025/00002</td>
+        <td class="txtalign">BADER SABAH BADER ALSABAH</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '2')">P</button></td>                
+        <td class="editable">Reported. Absent due to fever</td>       
+      </tr>
+      <tr data-id="3">
+        <td class="srnum">3</td>
+        <td class="studentcode">2025/00003</td>
+        <td class="txtalign">CADY ADEL SHAMLAN ALHASAWI</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '3')">P</button></td>      
+        <td class="editable"></td>      
+      </tr>
+      <tr data-id="4">
+        <td class="srnum">4</td>
+        <td class="studentcode">2025/00004</td>
+        <td class="txtalign">NADIA ABDULAZIZ TAREQ ALRESHAID</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '4')">P</button></td>      
+        <td class="editable"></td>       
+      </tr>
+      <tr data-id="5">
+        <td class="srnum">5</td>
+        <td class="studentcode">2025/00005</td>
+        <td class="txtalign">MOUDHI SHEHAB MOHAMMED ALSHEHAB</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '5')">P</button></td>      
+       <td class="editable">Absent but not Reported</td> 
+      </tr>
+      <tr data-id="6">
+        <td class="srnum">6</td>
+        <td class="studentcode">2025/00006</td>
+        <td class="txtalign">ADEL SHEHAB ABDULAZIZ HUSSAIN</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '6')">P</button></td>      
+        <td class="editable"></td>
+      </tr>
+       <tr data-id="7">
+        <td class="srnum">7</td>
+        <td class="studentcode">2025/00007</td>
+        <td class="txtalign">LAILA JASSIM MOHAMMAD ABBAS</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '7')">P</button></td>      
+        <td class="editable"></td>     
+      </tr>
+      <tr data-id="8">
+        <td class="srnum">8</td>
+        <td class="studentcode">2025/00008</td>
+        <td class="txtalign">OSAMAH MOHAMMAD AMER HELAL</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '8')">P</button></td>      
+        <td class="editable"></td>     
+      </tr>
+      <tr data-id="9">
+        <td class="srnum">9</td>
+        <td class="studentcode">2025/00009</td>
+        <td class="txtalign">MOHAMMAD AHMAD MOHAMMAD AL QATTAN</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '9')">P</button></td>      
+        <td class="editable"></td>     
+      </tr>
+      <tr data-id="10">
+        <td class="srnum">10</td>
+        <td class="studentcode">2025/00010</td>
+        <td class="txtalign">YARA JASSEM YAQOUB AL-KANDARI</td>
+        <td><button class="attendance-btn" onclick="toggleAttendance(this, '10')">P</button></td>      
+        <td class="editable"></td>     
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smartcustom.js"></script>
+    <script src="js/SmartAtt.js"></script>
+     <script type="text/javascript" src="lib/_frame/script/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="lib/smartui/lib/bootstrap-datepicker/datepicker.min.js?id=8049f830-fced-450f-a0d6-346579fc835c"></script>
+    
+  </body>
+</html>

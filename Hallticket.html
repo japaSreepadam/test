@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hall Ticket Management Report</title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/Hallticket.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="header-toolbar" style="position: sticky;
+  top: 0;
+  z-index: 999">
+  <div class="title">Hall Ticket Management Report</div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newPeriodBtn">New</button>
+    <button>Delete</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+</div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hall Ticket</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <div class="hall-ticket" style="margin-top: 10px;">
+  <!-- Hall Ticket Heading -->
+  <div class="hall-header" style="border-bottom: 2px solid #000;">
+    <h2><b>Hall Ticket</b></h2>
+  </div>
+
+  <div class="info-grid" style="padding: 8px; border: 1px solid #ccc; border-radius: 8px;">
+  <!-- Left Info -->
+  <div class="left-info" style="width: 442px;">
+    <div class="form-row"><label>Student Name</label><span>:</span><span>ABBAS HUSSAIN ABDULLAH DEHHAB</span></div>
+    <div class="form-row"><label>DOB</label><span>:</span><span>18-10-2019</span></div>
+    <div class="form-row"><label>Grade</label><span>:</span><span>GRADE 9</span></div>
+    <div class="form-row"><label>Class</label><span>:</span><span>A</span></div>
+        <div class="form-row"><label>Room No</label><span>:</span><span>15</span></div>
+
+  </div>
+
+  <!-- Right Info -->
+  <div class="right-info" style="margin-left: -30px;">
+    <div class="form-row"><label>Student Code</label><span>:</span><span>2025/00001</span></div>
+    <div class="form-row"><label>Exam</label><span>:</span><span>Mid Term</span></div>
+    <div class="form-row"><label>Stage</label><span>:</span><span>Elementary</span></div>  
+    <div class="form-row"><label>Seat label</label><span>:</span><span>A1</span></div>
+        <div class="form-row"><label>Issue Date</label><span>:</span><span>30-06-2025</span></div>
+  </div>
+
+  <!-- Photo -->
+  <div class="photo-box">
+  <img src="resources\happy-school-pupil-asian-boy-in-glasses-on-isolated-on-studio-background-with-copy-space-back-to-school-ai-generative-photo.jpeg"
+       alt="Student Photo"
+       style="width: 100%; height: 100%; object-fit: cover;" />
+       <img src="resources\images.png" 
+       alt="Student Barcode"
+       style="width: 150px; height: 50px; margin-top: 10px;" />
+</div>
+
+  <div class="signature" style="display: flex; align-items: center; gap: 10px; margin-top: 20px;">
+  <label style="white-space: nowrap;"><strong>Student Signature:</strong></label>
+  <div class="sign-box" style="width: 325px; height: 55px; border: 1px solid #c7c3c3;"></div>
+</div>
+</div>
+
+
+
+  <!-- Student Signature -->
+  
+
+  <!-- Time Table -->
+  <!-- Time Table Section -->
+<div class="timetable-section" style="padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+  <h3 style="margin-bottom: 15px;font-size: 1.5rem;"><b>Time Table</b></h3>
+  <table style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr style="background-color: #f0f0f0;">
+        <th style="border: 1px solid #ccc; padding: 8px;">Date</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Day</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Subject</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px;">10-01-2026</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Sunday</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">English<br><small>Teacher: SAMUEL</small></td>
+        <td style="border: 1px solid #ccc; padding: 8px;">1.30 PM - 4.00 PM</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px;">11-01-2026</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Monday</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Arabic<br><small>Teacher: NABEEL</small></td>
+        <td style="border: 1px solid #ccc; padding: 8px;">1.30 PM - 4.00 PM</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px;">12-01-2026</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Tuesday</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Science<br><small>Teacher: LILA</small></td>
+        <td style="border: 1px solid #ccc; padding: 8px;">1.30 PM - 4.00 PM</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px;">13-01-2026</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Wednesday</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Maths<br><small>Teacher: JISNA</small></td>
+        <td style="border: 1px solid #ccc; padding: 8px;">1.30 PM - 4.00 PM</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px;">14-01-2026</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Thursday</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Social Studies<br><small>Teacher: MARIYA</small></td>
+        <td style="border: 1px solid #ccc; padding: 8px;">1.30 PM - 4.00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="signature" style="display: flex; align-items: center; gap: 10px; margin-top: 20px;">
+  <label style="white-space: nowrap;"><strong>Principal Signature:</strong></label>
+  <div class="sign-box" style="width: 325px; height: 55px; border: 1px solid #c7c3c3;"></div>
+</div>
+</div>
+
+
+  <!-- Principal Signature -->
+  
+
+  <!-- Instructions and Comments Section -->
+  <div class="instructions-section" style="margin-top: 10px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    <h4><b>Instructions for the Candidates</b></h4>
+    <ul>
+        <li>Be present in the exam room 15 minutes before the start time.</li>
+        <li>Carry your hall ticket on all exam days.</li>
+        <li>No electronic gadgets allowed.</li>
+        <li>Follow all instructions given by invigilators.</li>
+      </ul>
+    <div class="container" style="margin-top: 10px;">
+      <textarea placeholder="Write here..." rows="4" cols="50" style="width:100%; max-width:100%;"></textarea>
+    </div>
+  </div>
+</div>
+
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then your custom script -->
+<script src="js/Hallticket.js"></script>
+
+  </body>
+</html>

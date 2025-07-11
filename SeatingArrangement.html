@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"class="root-text-md theme-1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seating  Arrangement Master  </title>
+    <link rel="stylesheet" href="css/bootstrp.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+     <link rel="stylesheet" href="css/SeatingArrangement.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/ionicons/css/ionicons.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/fonts/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"><link rel="stylesheet" media="all" href="/myVD/lib/smartui/lib/bootstrap-datepicker/datepicker.min.css"><link rel="stylesheet" href="/myVD/lib/smartui/style.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/common.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/toolbar.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/input.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/widget.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/table.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/grid.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/loader.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/select.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/smartui/lib/select2/select2.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/popup.css?id=02124034172"><link rel="stylesheet" href="/myVD/lib/controls/tab.css?id=02124034172">   
+  </head>
+  <body>   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div class="header-toolbar">
+  <div class="title">Seating  Arrangement Master  </div>
+ <div class="toolbar" id="defaultToolbar">
+    <button  id="newSeatingarrBtn">New</button>
+    <button>Delete</button>
+    <button>Prev</button>
+    <button>Next</button>
+    <button id="ClsSubBtn">Close</button>
+  </div>
+</div>
+  <div class="listing-container">
+    <div class="Smart-Listingsep"><h6>Listing</h6></div>
+    <table>
+      <thead>
+        <tr>
+            <th style="width: 5%;">Academic year </th>
+            <th style="width: 10%;">Student Code</th>
+            <th style="width: 10%;">Student Name</th> 
+            <th style="width: 10%;">Grade</th>            
+            <th style="width: 10%;">Exam Name</th>   
+            <th style="width: 10%;">Subject</th>   
+            <th style="width: 10%;">Teacher</th>   
+            <th style="width: 10%;">Room No</th>   
+            <th style="width: 10%;">Set Label</th>   
+            <th style="width: 10%;">Student Count</th>  
+            <th style="width: 10%;">Total number of seats</th>     
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025/2026</td>
+          <td>2025/00001</td>
+          <td style="text-align: left;">ABBAS HUSSAIN ABDULLAH DEHRAB</td>     
+          <td>KG 1</td>
+          <td>Term 1</td>     
+          <td>English</td>
+          <td>Alice</td>
+          <td>15</td>     
+          <td>A1</td>
+          <td>50</td>
+          <td>100</td>     
+        </tr>
+          <tr>
+          <td>2025/2026</td>
+          <td>2025/00002</td>
+          <td style="text-align: left;">NADIA ABDULAZIZ TAREQ ALRESHAID</td>     
+          <td>Grade 1</td>
+          <td>Term 2</td>     
+          <td>Maths</td>
+          <td>Bob</td>
+          <td>10</td>     
+          <td>B12</td>
+          <td>50</td>
+          <td>120</td>     
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </div>
+  <div class="search-container">
+     <div class="Smart-Mastersep"><h6>Master</h6></div>
+    <div class="form-grid">
+      <div><label>Academic year</label><input type="text" id="Academicyear"></div>
+      <div><label>Student Code</label><input type="text" id="StudentCode"></div>
+      <div><label>Exam Name</label><input type="text" id="ExamName"></div>
+     <div>
+          <label>Subject</label>
+          <select id="Subject">
+            <option value=""></option>
+            <option value="00001">English</option>
+            <option value="00002">Maths</option>
+            <option value="00003">Physics</option>
+            <option value="00004">Chemistry</option>
+            <option value="00005">Biology</option>
+            <option value="00006">Geography</option>
+            <option value="00007">History</option>
+            
+          </select>
+        </div>
+        <div>
+          <label>Teacher</label>
+          <select id="Teacher">
+            <option value=""></option>
+            <option value="00001">Alice</option>
+            <option value="00002">Bob</option>
+            <option value="00003">Charlie</option>
+            <option value="00004">David</option>
+            <option value="00005">Emma</option>
+            <option value="00006">Frank</option>
+            <option value="00007">George</option>
+            <option value="00008">Helen</option>
+            <option value="00009">Ian</option>
+            <option value="00010">John</option>
+            <option value="00011">Kelly</option>
+            <option value="00012">Leo</option>
+            <option value="00013">Mary</option>
+            <option value="00014">Nathan</option>
+            <option value="00015">Olivia</option>
+            <option value="00016">Paul</option>
+            <option value="00017">Quincy</option>
+            <option value="00018">Rita</option>
+            <option value="00019">Steve</option>
+            <option value="00020">Tina</option>
+            <option value="00021">Uma</option>
+          </select>
+        </div>
+    </div>
+    </div>
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then your custom script -->
+<script src="js/SeatingArrangement.js"></script>
+
+  </body>
+</html>
